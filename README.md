@@ -15,6 +15,10 @@ The application is developed with the following technologies:
 - MongoDB
 - Mongoose
 
+# Running project
+Clone repository locally, and run command npm install to add node modules to the project.
+Run node server.js and navigate to localhost:3000
+
 # Release Notes
 Functionality developed includes entering, updating and deleting inventory data, and entering and viewing IT requests.
 Implemented REST - Accessible by inventory/format/:format or requests/format/:format. data is returned in appropriate format, but does not consistently render in readable view (possibly due to browser behavior)
