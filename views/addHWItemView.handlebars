@@ -1,0 +1,66 @@
+ <div class="container">
+ <div class="table-responsive">
+  <form method="post" action="/inventory/insert">
+    <table class="table table-condensed">
+      <tbody>
+       
+       <tr>
+         <th>Name: </th>
+         <td><input type="text" name="item_name" required></td>
+       </tr>
+       <tr>
+         <th>Type: </th>
+         <td><input type="text" name="item_type" required></td>
+       </tr>
+       <tr>
+         <th>Brand: </th>
+         <td><input type="text" name="item_brand" required></td>
+       </tr>
+       <tr>
+         <th>Model Number: </th>
+         <td><input type="text" name="item_modelno" required></td>
+       </tr>
+       <tr>
+         <th>Date Acquired: </th>
+         <td><input type="text" name="item_dateacq" required 
+              placeholder="MM/DD/YYYY"></td>
+       </tr>
+       <tr>
+         <th>Employee Assigned To: </th>
+         <td><input type="text" name="item_emp" required 
+              placeholder="Full name"></td>
+       </tr>
+       <tr>
+         <th>Condition: </th>
+         <td><input type="text" name="item_cond" required></td>
+       </tr>
+       <tr>
+         <th>Cost: </th>
+         <td><input type="text" name="item_cost" required></td>
+       </tr>
+       <tr>
+         <th>Location: </th>
+         <td><input type="text" name="item_loc" required></td>
+       </tr>
+       
+       </tbody>
+      <tfooter>
+        <tr>
+          <td></td>
+          <td>
+           <input type="submit" value="Submit" 
+              class="btn btn-success">
+           <input type="button" value="Cancel" 
+              class="btn btn-danger" onclick="addCancel()">
+          </td>
+        </tr>
+      </tfooter>
+    </table>
+  </form>
+</div>
+</div>
+
+<!-- 
+  Sources:
+  Bachoti, Praveen. CS602_HW3_Bachoti. METCS602. Boston University, 15 August, 2022.
+-->

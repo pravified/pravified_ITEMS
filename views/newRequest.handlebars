@@ -1,0 +1,48 @@
+ <div class="container">
+ <div class="table-responsive">
+  <form method="post" action="/requests/create">
+  <div style="padding: 10px; margin-bottom: 10px;"><a href="#" onclick="returnHome()" class="text-info stretched-link"><i class="fa fa-solid fa-arrow-left"></i>&nbsp;Back</a><br/></div>
+    <table class="table table-condensed">
+      <tbody>
+       <tr>
+         <th>Full Name: </th>
+         <td><input type="text" name="req_fullname" required></td>
+       </tr>
+       <tr>
+         <th>Requested Item: </th>
+         <td><input type="text" name="req_item" required></td>
+       </tr>
+       <tr>
+         <th>Needed By: </th>
+         <td><input type="text" name="req_neededby" required placeholder="MM/DD/YYYY"></td>
+       </tr>
+       <tr>
+         <th>Location: </th>
+         <td><input type="text" name="req_loc" required></td>
+       </tr>
+       <tr>
+         <th>Justification: </th>
+         <td><input type="text" name="req_justif" required></td>
+       </tr>
+
+       
+       </tbody>
+      <tfooter>
+        <tr>
+          <td></td>
+          <td>
+           <input type="submit" value="Submit" 
+              class="btn btn-success">
+          </td>
+        </tr>
+      </tfooter>
+    </table>
+  </form>
+</div>
+</div>
+
+<!-- 
+  Sources:
+  Bachoti, Praveen. CS602_HW3_Bachoti. METCS602. Boston University, 15 August, 2022.
+  Thornton, Jacob, and Mark Otto. “Stretched link.” GetBootstrap, https://getbootstrap.com/docs/4.3/utilities/stretched-link/.
+  -->

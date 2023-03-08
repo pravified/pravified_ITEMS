@@ -1,0 +1,35 @@
+<div class="container">
+<div style="padding: 10px; margin-bottom: 10px;"><a href="#" onclick="returnToReqs()" class="text-info stretched-link"><i class="fa fa-solid fa-arrow-left"></i>&nbsp;Back</a><br/></div>
+<div class="table-responsive">
+    <table class="table table-condensed">
+      <tbody>
+        <tr>
+          <th>Full Name: </td>
+          <td>{{data.fullname}}</td>
+        </tr>
+        <tr>
+          <th>Requested Item: </td>
+          <td>{{data.reqItem}}</td>
+        </tr>
+        <tr>
+          <th>Date Needed By: </td>
+          <td>{{data.needBy}}</td>
+        </tr>
+        <tr>
+          <th>Location: </td>
+          <td>{{data.location}}</td>
+        </tr>
+        <tr>
+          <th>Justification: </td>
+          <td>{{data.justification}}</td>
+        </tr>
+        <input type="hidden" name="id" value="{{data.id}}">
+       
+      </tbody>
+    </table>
+</div>
+</div>
+<!-- 
+  Sources:
+  Bachoti, Praveen. CS602_HW3_Bachoti. METCS602. Boston University, 15 August, 2022.
+-->

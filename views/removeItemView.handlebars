@@ -1,0 +1,63 @@
+<div class="container">
+<div class="table-responsive">
+  <form method="post" action='/inventory/remove'>
+    <table class="table table-condensed">
+      <tbody>
+        <tr>
+          <th>Name: </td>
+          <td>{{data.name}}</td>
+        </tr>
+        <tr>
+          <th>Type: </td>
+          <td>{{data.type}}</td>
+        </tr>
+        <tr>
+          <th>Brand: </td>
+          <td>{{data.brand}}</td>
+        </tr>
+        <tr>
+          <th>Model number: </td>
+          <td>{{data.modelNum}}</td>
+        </tr>
+        <tr>
+          <th>Date acquired: </td>
+          <td>{{data.acqDate}}</td>
+        </tr>
+        <tr>
+          <th>Employee assigned to: </td>
+          <td>{{data.employee}}</td>
+        </tr>
+        <tr>
+          <th>Condition: </td>
+          <td>{{data.condition}}</td>
+        </tr>
+        <tr>
+          <th>Cost: </td>
+          <td>{{data.cost}}</td>
+        </tr>
+        <tr>
+          <th>Office Location stored: </td>
+          <td>{{data.location}}</td>
+        </tr>
+        <input type="hidden" name="id" value="{{data.id}}">
+       
+      </tbody>
+      <tfooter>
+        <tr>
+          <td></td>
+          <td>
+              <input type="submit" value="Remove" class="btn btn-danger">
+              <input type="button" value="Cancel" class="btn btn-default"
+                  class="cancel" onclick="deleteCancel()">
+          </td>
+        </tr>
+      </tfooter>
+    </table>
+  </form>
+</div>
+</div>
+
+<!-- 
+  Sources:
+  Bachoti, Praveen. CS602_HW3_Bachoti. METCS602. Boston University, 15 August, 2022.
+-->
